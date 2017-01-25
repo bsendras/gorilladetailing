@@ -63,15 +63,43 @@
 
       <!-- PRODUCTOS -->          
       <div class="content-section body-products">
-
+        <h2>Conoce nuestros productos!</h2>
+        <p>Ofrecemos una amplia gama de prductos de elaboraci&oacute;n propia, econ&oacute;micos y de alta calidad para el mantenimiento diario y limpieza de tu vehículo.</p>
+        <div class="button">Con&oacute;celos</div>
       </div>
       
       <!-- NOSOTROS -->          
       <div class="content-section">
+      <div id="map"></div>
+
+      <script>
+        function initMap() {
+          var uluru = {lat: -34.689757, lng: -58.537757};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk1hGO6yci2qvv9Xx8PNwXSt7GBW19gXA&callback=initMap">
+      </script>      
 
       </div>      
     </div>
     <div class="footer">
-    </div>  
+      <div class="social">
+        <p>Seguinos en:</p>    
+        <ul>
+          <li class="facebook"><img src="./img/social-1_logo-facebook.svg" alt="facebook-logo"/><li>
+          <li class="twitter"><img src="./img/social-1_logo-twitter.svg" alt="twitter-logo"/></li>
+          <li class="instagram"><img src="./img/social-1_logo-instagram.svg" alt="instagram-logo"/></li>  
+        </ul>
+      </div>
+    </div>
   </body>  
 </html>

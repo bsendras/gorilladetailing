@@ -1,7 +1,7 @@
 * {
   /* border: 1px solid rgba(0,0,0,0.3); */
   box-sizing: border-box;  
-  font-family: "Roboto", Serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
   margin: 0;
   padding: 0;  
@@ -36,6 +36,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top center;
+  background-size: cover;
   height: 750px;
 }
 
@@ -96,30 +97,20 @@
 .content-section {
   height: 690px;
   width: 100%;
+  padding-top: 60px;  
 }
-
-.footer {
-  color: #fff;
-  background-color: #373737; 
-  padding: 0;
-  height: 200px; 
-}
-
-/*
-.head-services,
-.head-products,
-.head-us {
-  visibility: hidden;
-}
-*/
 
 .service {
-  font-size: 1.2em;
+  font-size: 1.5em;
   padding: 60px 80px;
   text-align: center;
   display: inline-block;
   float: left;
   width: 33.333333%;
+}
+
+.service h2 {
+  margin: 0 0 50px 0;
 }
 
 .wash {
@@ -143,18 +134,65 @@
   margin: 0 auto 30px auto;
 }
 
-.service h2 {
-  margin: 0 0 50px 0;
-}
-
 .body-products {
   background-image: url("../img/bk-products.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 150px;
 }
 
-.content-section {
-  padding-top: 60px;
+.body-products h2 {
+  margin: 0 0 40px 0;
+}
+
+.body-products p {
+  width: 60%;
+  margin: 0 20%;
+}
+
+.button {
+  color: #fff;
+  background-color: #B94B51;
+  border-radius: 5px;
+  text-align: center;
+  width: 240px;
+  height: 70px;
+  padding: 18px;
+  margin: 100px auto;
+}
+
+#map {
+  width: 600px;
+  height: 560px;
+  margin-right: 80px;
+  float: right;
+  pointer-events: none;
+}
+
+.footer {
+  color: #fff;
+  background-color: #373737; 
+  padding: 0;
+  height: 200px; 
+}
+
+div.social {
+  width: 300;
+  height: 50%;
+  float: right;
+  padding: 50px;
+}
+
+div.social p {
+  font-size: 1.5em;  
+}
+
+div.social ul li {
+  display: inline-block;
+  margin: 10px 10px 0 0;
 }
