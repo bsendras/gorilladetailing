@@ -61,10 +61,10 @@
 
 .logo {
   padding: 0;
-  position: relative;
+  position: relative;  
   top: 650px;
   width: 550px;
-  float: right;
+  float: right;  
 }
 
 .logo span {
@@ -82,31 +82,31 @@
   vertical-align: middle;
 }
 
-.down-arrow {
-  visibility: hidden;
-  border-radius: 100%;
-  border-style: none;
-  background-color: rgba(255,255,255,0.5);
-  padding: 5px;
-  position: relative;
-  top: 655px;
-  left: 40px;
-  float: left;
-}
-
 .content-section {
   height: 690px;
   width: 100%;
-  padding-top: 60px;  
+}
+
+/* IMPORTANTE */
+.services {  
+  /* con estas 3 propiedades los elementos contenidos se alinean horizontalmente como en un flow panel */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* expande el div contenedor en caso de que el contenido se expanda hacia abajo */
+  min-height: inherit;
+  height: auto;
 }
 
 .service {
+  /* border: 1px solid black; */
   font-size: 1.5em;
-  padding: 60px 80px;
+  padding: 60px 10px;
   text-align: center;
   display: inline-block;
   float: left;
-  width: 33.333333%;
+  width: 420px;
+  margin: 10px;
 }
 
 .service h2 {
@@ -167,9 +167,9 @@
 }
 
 #map {
-  width: 600px;
-  height: 560px;
-  margin-right: 80px;
+  width: 500px;
+  height: 500px;
+  margin: 80px 80px;
   float: right;
   pointer-events: none;
 }
