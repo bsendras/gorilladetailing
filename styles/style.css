@@ -1,10 +1,21 @@
 * {
-  /* border: 1px solid rgba(0,0,0,0.3); */
+  /* border: 1px solid rgba(0,0,0,0.3); */ 
   box-sizing: border-box;  
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 100;  
   margin: 0;
-  padding: 0;  
+  padding: 0;      
+}
+
+html {
+  /* normalizo el font-zise base para que sea el mismo en todos los navegadores*/
+  font-size: 16px;
+}
+
+body {
+  /* ahora lo transformo a un tamaño de 10px, y lo dejo expresado en porcentaje */
+  /* De aqui en adelante todos los tamaños de fuente son relativos a 10px */
+  font-size: 62.5%; /* 10px*/
 }
 
 .navigation {
@@ -22,7 +33,7 @@
 
 .navigation li {
   padding: 15px 0px;
-  font-size: 1.2em;
+  font-size: 1.8em; /* 18px */
   text-align: center;
   letter-spacing: 0.1em;
   display: inline-block;
@@ -47,7 +58,7 @@
 
 .banner {
   background-color: rgba(255,255,255,0.5);
-  font-size: 1.5em;
+  font-size: 2.4em; /*24px*/ 
   color: #373737;
   padding: 2%;
   position: absolute;  
@@ -76,8 +87,7 @@
   color: #fff;
   display: inline-block;
   vertical-align: middle;
-  font-family: "Roboto", sans-serif;
-  font-size: 3em;
+  font-size: 4.8em; /* 48px */
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -105,7 +115,7 @@
 
 .service {
   /* border: 1px solid black; */
-  font-size: 1.5em;
+  font-size: 2.4em; /* 24px */
   padding: 60px 10px;
   text-align: center;
   display: inline-block;
@@ -146,7 +156,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 2.4em; /* 24px */
   text-align: center;
   padding-top: 150px;
 }
@@ -194,7 +204,7 @@ div.social {
 }
 
 div.social p {
-  font-size: 1.5em;  
+  font-size: 2.4em; /* 24px */  
 }
 
 div.social ul li {
